@@ -38,8 +38,8 @@ const Verification = ({ callback, reset, isLoading }) => {
     const input = e.target;
     const previousInput = inputRefs[index - 1];
     const nextInput = inputRefs[index + 1];
-
-    if (!Number(input.value)) {
+    const value = Number(input.value);
+    if (isNaN(value) || input.value.trim() === "") {
       setErrorIndices([index]);
       input.value = "";
       return;
