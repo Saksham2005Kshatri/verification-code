@@ -1,0 +1,40 @@
+/* SuccessPage.css */
+.successPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+.successContent {
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.successTitle {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.successMessage {
+  font-size: 1.25rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.homeLink {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}
