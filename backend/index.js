@@ -16,7 +16,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
 // cors middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://verification-code-blys.onrender.com",
+  })
+);
 
 app.use(express.json());
 // routes
