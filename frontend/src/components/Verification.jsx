@@ -102,9 +102,12 @@ const Verification = ({ callback, reset, isLoading }) => {
 
     if (code.length === 6) {
       try {
-        const response = await axios.post("http://localhost:8000/api", {
-          code: numericalCode,
-        });
+        const response = await axios.post(
+          "https://verification-code-1.onrender.com/api",
+          {
+            code: numericalCode,
+          }
+        );
         console.log(response);
         if (response.status === 200) {
           if (typeof callback === "function") {
