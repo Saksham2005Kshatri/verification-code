@@ -103,7 +103,7 @@ const Verification = ({ callback, reset, isLoading }) => {
     if (code.length === 6) {
       try {
         const response = await axios.post(
-          "https://verification-code-1.onrender.com/api",
+          "https://verification-code-2.onrender.com/api",
           {
             code: numericalCode,
           }
